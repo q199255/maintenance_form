@@ -1,0 +1,111 @@
+<style>
+  body {
+    font-family: "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+    background: #f9fafd;
+    padding: 20px;
+  }
+
+  form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+  }
+
+  label {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.8px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #444;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+  }
+
+  input[type="date"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #4973e8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(73, 115, 232, 0.4);
+  }
+
+  textarea {
+    min-height: 80px;
+  }
+
+  button[type="submit"] {
+    margin-top: 15px;
+    width: 100%;
+    background: #4973e8;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button[type="submit"]:hover {
+    background: #365dc1;
+  }
+</style>
+
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSd0f2AxJVPqOzCzqxs_Tfds5rKeLNuD_pWIhYocU4tFTZxE-g/formResponse" method="POST" target="_self">
+
+  <label>維護日期：</label>
+  <input type="date" name="entry.1689988318" required>
+
+  <label>作業類型：</label>
+  <select name="entry.758517373" required>
+    <option value="">請選擇</option>
+    <option value="例行保養">例行保養</option>
+    <option value="故障處理">故障處理</option>
+    <option value="異常排除TEST">異常排除TEST</option>
+  </select>
+
+  <label>地點：</label>
+  <select name="entry.420545588" required>
+    <option value="">請選擇</option>
+    <option value="主控室">主控室</option>
+    <option value="1A播音室">1A播音室</option>
+    <option value="2A播音室">2A播音室</option>
+    <option value="2B播音室">2B播音室</option>
+    <option value="2C播音室">2C播音室</option>
+    <option value="2D播音室">2D播音室</option>
+    <option value="卑南發射臺">卑南發射臺</option>
+    <option value="鯉魚山發射臺">鯉魚山發射臺</option>
+    <option value="成功轉播站">成功轉播站</option>
+  </select>
+
+  <label>問題描述／維護項目：</label>
+  <textarea name="entry.1439788759" rows="3" required></textarea>
+
+  <label>處理方式：</label>
+  <textarea name="entry.1508464563" rows="3" required></textarea>
+
+  <label>負責人：</label>
+  <select name="entry.1512972577" required>
+    <option value="">請選擇</option>
+    <option value="陳建和">陳建和</option>
+    <option value="陳信吉">陳信吉</option>
+  </select>
+
+  <button type="submit">送出</button>
+</form>
